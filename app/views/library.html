@@ -1,0 +1,52 @@
+<div class="header">
+  <ul class="nav nav-pills">
+    <h1 class="myBox">My Box</h1>
+    <li><a ng-href="#">Home</a></li>
+    <li><a ng-href="#/random">Random WOD</a></li>
+    <li class="active"><a ng-href="#/library">WOD Library</a></li>
+    <li><a ng-href="#/map">Box Locator</a></li>
+    <div ng-include="'views/nav.html'"></div>
+  </ul>
+</div>
+
+<div class="jumbotron">
+  <div class="pageTitle">
+   <h2 class="titleName">WOD Library</h2> 
+  </div>            
+</div> 
+
+<div class="row marketing">
+  <h1 ng-hide="signedIn()">Sign In To See Your Workouts</h1>
+  <div class="col-lg-6" ng-controller="NavCtrl" ng-show="signedIn()">
+    <form role="search" ng-submit="submitPost()">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Workout Title" ng-model="post.title">
+      </div>
+      <div class="form-group">
+      <textarea class="form-control" placeholder="Workout Description" ng-model="post.content"></textarea>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+
+  <div class="col-lg-6 libraryList" ng-show="signedIn()">
+    <h2>Workouts</h2>
+    <article ng-repeat="(postId, post) in posts" ng-show="signedIn() && post.owner === currentUser.username">
+      
+        <div>
+            <h4>{{ post.title | uppercase}}</h4>
+            <p> {{ post.content }} </p>
+        </div>
+        <div>
+          <span>submitted by {{ post.owner }}</span>
+          &mdash;
+          <a href="#/posts/{{ postId }}">update </a>|
+          <a ng-click="deletePost(postId)">delete</a>
+        </div>
+    </article>
+  </div>
+</div>
+
+<div class="footer">
+  <p>My Box, Inc.</p>
+</div>

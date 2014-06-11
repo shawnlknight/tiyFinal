@@ -1,0 +1,21 @@
+<div ng-controller="NavCtrl">
+  <ul class="nav navbar-nav navbar-right" ng-show="signedIn()">
+    <li>
+      <a href="#" ng-click="logout()">{{ currentUser.username }} | Logout</a>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right" ng-hide="signedIn()">
+    <li>
+      <a href="#/register">Register</a>
+    </li>
+    <li>
+      <a href="#/login">Log In</a>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+

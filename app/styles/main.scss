@@ -1,0 +1,316 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+nav {
+    background-color: #242224;
+}
+
+.nav li a {
+    color: #d6d6d6;
+    border-radius: 0;
+}
+
+.nav li a:hover {
+    color: #000;
+}
+
+.nav-pills {
+    background-color: #242224;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 18px;
+    border-radius: none;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #000;
+    background-color: #d6d6d6;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    max-height: 15px;
+    margin-top: 0;
+    padding-bottom: 0;
+    opacity: 0.9;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.footer {
+    background: #242224;
+    width: 100%;
+    min-height: 50px;
+    p {
+        padding: 2%;
+        margin:0;
+        text-align: center;
+        color: #12ad04;
+        font-size: 18px;
+    }
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    .jumbotron {
+        border-radius: 0;
+    }
+
+}
+
+.jumbotron {
+    background: url(http://redstickcrossfit.com/wp-content/uploads/2013/03/box-HDR-2-22-940x419.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pageTitle {
+    margin: 10% auto;
+    min-height: 200px;
+    max-width: 500px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #242224;
+    opacity: 0.9;
+    text-align: center;
+    .btn {
+        font-size: 20px;
+        padding: 14px 14px;
+        background-color: #d6d6d6;
+    }
+    .btn:hover {
+        background-color: #12ad04;
+    }
+
+}
+
+.titleName {
+    color: #12ad04;
+    padding-top: 5%;
+    padding-bottom: 10px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    background-color: #fff;
+    margin: 40px 0;
+    min-height: 600px;
+    p + h4 {
+        margin-top: 28px;
+    }
+}
+
+.myBox {
+    float: right;
+    color: #12ad04;
+    padding-right: 100px;
+    margin-left: 50px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    background: #f1f1f1;
+}
+
+.newWod {
+    max-width: 400px;
+}
+
+.wodList {
+    font-size: 115%;
+}
+
+article {
+    margin-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.col-lg-6 {
+    margin: 0 auto;
+}
+
+.wodDescription {
+    margin-bottom: 10px;
+}
+
+textarea.form-control {
+    min-height: 200px;
+}
+
+.updateWod {
+    padding-left: 10px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.deleteWod {
+    cursor: pointer;
+}
+
+.randomWod {
+    margin-left: 10%;
+    padding-top: 20px;
+    font-size: 150%;
+}
+
+.submitUpdate {
+    background-color: #12ad04;
+}
+
+#submitButton {
+    font-size: 16px;
+    background-color: #d6d6d6;
+}
+
+#submitButton:hover {
+    background-color: #12ad04;
+}
+
+.lead {
+    color: #d6d6d6;
+}
+
+#wodForm {
+    padding-left: 30%;
+    .btn:hover {
+        background-color: #12ad04;
+    }
+}
+
+#wodTextArea {
+    width: 400px;
+}
+
+.libraryList {
+    border-left: 1px solid #c9c9c9;
+}
+
+.boxMap {
+    padding-left: 25%;
+}
+
+.angular-google-map-container { 
+    height: 400px; 
+    width: 800px;
+}
+
+.form-control {
+    width: 400px;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: none !important;
+}
+
+// .flex-container {
+// display: -webkit-flex;
+// -webkit-flex-direction: row;
+// -webkit-justify-content: space-between;
+// -webkit-flex-wrap: wrap;
+// }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        
+        // border: 1px solid #e5e5e5;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+    .angular-google-map-container { 
+        height: 400px; 
+        width: 600px;
+    }
+}
+
+/* Responsive: Portrait mobile */
+@media screen and (max-width: 960px) {
+    .pageTitle {
+        margin-top: 18%;
+    }
+    .myBox {
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .nav-pills {
+        font-size: 16px;
+    }
+    .nav > li {
+        float: left;
+        position: relative;
+        display: block;
+        vertical-align: middle;
+    }
+    #wodForm {
+        padding-left: 10%;
+    }
+    .angular-google-map-container { 
+        height: 400px; 
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .pageTitle {
+        margin-top: 40%;
+    }
+    #wodForm {
+        padding-left: 2%;
+    }
+    .angular-google-map-container { 
+        height: 400px; 
+        width: 500px;
+    }
+    .angular-google-map-container { 
+        height: 400px; 
+        width: 500px;
+    }
+    .boxMap {
+        padding-left: 2%;
+    }
+}

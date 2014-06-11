@@ -1,0 +1,57 @@
+<!-- <div class="container posts-page">
+
+  <div class="post row" ng-repeat="(postId, post) in posts" ng-show="signedIn() && post.owner === currentUser.username">
+    <div class="col-xs-1">
+
+    </div>
+    <div class="col-md-9 col-xs-11">
+
+      <div class="info">
+        
+          {{ post.title }}
+          {{ post.content }}
+        
+      </div>
+      <div>
+        <span>submitted by {{ post.owner }}</span>
+        &mdash;
+        <a href="#/posts/{{ postId }}">comments</a>
+        <a ng-click="deletePost(postId)">delete</a>
+      </div>
+    </div>
+    <div class="col-md-2">
+      
+    </div>
+
+  </div>
+
+</div> -->
+
+<div class="header">
+  <ul class="nav nav-pills">
+    <h1 class="myBox">My Box</h1>
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#/random">Random WOD</a></li>
+    <li><a ng-href="#/library">WOD Library</a></li>
+    <li><a ng-href="#/map">Box Locator</a></li>
+    <div ng-include="'views/nav.html'"></div>
+  </ul>
+
+</div>
+
+<div class="jumbotron">
+  <div class="pageTitle">
+    <h2 class="titleName">Welcome to My Box</h2>
+    <h3>For the CrossFit Athlete</h3>
+  </div>
+</div>
+
+<div class="row marketing">
+    
+</div>
+
+
+<div class="footer">
+    <p>My Box, Inc.</p>
+      
+</div>

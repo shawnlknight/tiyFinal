@@ -1,0 +1,40 @@
+<div class="header">
+  <ul class="nav nav-pills">
+  	<h1 class="myBox">My Box</h1>
+    <li><a ng-href="#">Home</a></li>
+    <li><a ng-href="#/random">Random WOD</a></li>
+    <li><a ng-href="#/library">WOD Library</a></li>
+    <li class="active"><a ng-href="#/map">Box Locator</a></li>
+    <div ng-include="'views/nav.html'"></div>
+  </ul>
+</div>
+
+<div class="jumbotron">
+  <div class="pageTitle">
+  	<h2 class="titleName">Locate a Box near you</h2>
+  </div>
+</div>
+
+<div class="row marketing">
+  <div class="boxMap">
+    <input name="" class="form-control" type="search" ng-model="something" placeholder="Enter location" />
+  	<button type="button btn" class="btn btn-md btn-default" value="crossfit" alt="gym">Search Boxes</button>
+  	<google-map 
+  			center="map.center" 
+  			zoom="map.zoom"
+  			draggable="true"
+  			mark-click="false"
+  			>
+  		<markers>
+      <marker ng-repeat="marker in markers" coords="marker">
+      </marker>
+      </markers>
+
+  	</google-map>
+  </div>
+
+</div>
+
+<div class="footer">
+    <p>My Box, Inc.</p>
+</div>
