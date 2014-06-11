@@ -147,6 +147,16 @@ nav {
     font-size: 115%;
 }
 
+.workoutList {
+    max-width: 350px;
+    min-height: 200px;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    h4 {
+        text-align: center;
+    }
+}
+
 article {
     margin-left: 50px;
     padding-top: 15px;

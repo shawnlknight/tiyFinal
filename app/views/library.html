@@ -20,6 +20,7 @@
 <div class="row marketing">
   <h1 ng-hide="signedIn()">Sign In To See Your Workouts</h1>
   <div class="col-lg-6" ng-controller="NavCtrl" ng-show="signedIn()">
+    <h2>Enter Your Workout</h2>
     <form role="search" ng-submit="submitPost()">
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Workout Title" ng-model="post.title">
@@ -35,15 +36,16 @@
     <h2>Workouts</h2>
     <article ng-repeat="(postId, post) in posts" ng-show="signedIn() && post.owner === currentUser.username">
       
-        <div>
+        <div class="workoutList">
             <h4>{{ post.title | uppercase}}</h4>
             <p> {{ post.content }} </p>
         </div>
         <div>
-          <span>submitted by {{ post.owner }}</span>
           &mdash;
+          <span>submitted by {{ post.owner }}</span>
+          <br>
           <a href="#/posts/{{ postId }}">update </a>|
-          <a ng-click="deletePost(postId)">delete</a>
+          <a href="" ng-click="deletePost(postId)">delete</a>
         </div>
     </article>
   </div>
