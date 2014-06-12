@@ -2,8 +2,8 @@
   <ul class="nav nav-pills">
     <h1 class="myBox">My Box</h1>
     <li><a ng-href="#">Home</a></li>
-    <li><a ng-href="#/random">Random WOD</a></li>
     <li class="active"><a ng-href="#/library">WOD Library</a></li>
+    <li><a ng-href="#/random">Random WOD</a></li>
     <li><a ng-href="#/map">Box Locator</a></li>
     <div ng-include="'views/nav.html'"></div>
   </ul>
@@ -32,6 +32,7 @@
     </form>
   </div>
 
+
   <div class="col-lg-6 libraryList" ng-show="signedIn()">
     <h2>Workouts</h2>
     <article ng-repeat="(postId, post) in posts" ng-show="signedIn() && post.owner === currentUser.username">
@@ -52,5 +53,5 @@
 </div>
 
 <div class="footer">
-  <p>My Box, Inc.</p>
+  <p>@ 2014 My Box, Inc.</p>
 </div>

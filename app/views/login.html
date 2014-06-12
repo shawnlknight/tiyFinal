@@ -1,12 +1,15 @@
-<div class="auth-forms">
 
-  <h2>Log In</h2>
-
-  <form ng-submit="login()">
-    <p ng-show="error" class="text-danger">{{ error }}</p>
-    <input type="email" ng-model="user.email" placeholder="Email" class="form-control"><br>
-    <input type="password" ng-model="user.password" placeholder="Password" class="form-control"><br>
-    <input type="submit" value="Log in" class="btn btn-primary" />
-  </form>
-
+<div class="row-marketing">
+	<div class="login">
+		<div class="auth-forms">
+		  <h2>User Login</h2>
+		  <form ng-submit="login()">
+		    <p ng-show="error" class="text-danger">{{ error }}</p>
+		    <input type="email" ng-model="user.email" placeholder="Email" class="form-control"><br>
+		    <input type="password" ng-model="user.password" placeholder="Password" class="form-control"><br>
+		    <input type="submit" value="Login" class="btn btn-default loginBtn" />
+		  </form>
+		</div>
+		<a ng-href="#"><button class="btn btn-lg btn-warning cancel">Cancel</button></a>
+	</div>
 </div>
