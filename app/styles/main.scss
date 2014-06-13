@@ -89,7 +89,7 @@ nav {
 }
 
 .jumbotron {
-    background: url(http://redstickcrossfit.com/wp-content/uploads/2013/03/box-HDR-2-22-940x419.jpg);
+    background: url(/images/gym.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -159,14 +159,20 @@ nav {
 }
 
 .col-md-4 {
-    border: 1px solid #c9c9c9;
+    a {
+        text-decoration: none;
+        color: #12ad04;
+    }
+    a:hover {
+            color: #242224;
+        }
     
     h3 {
         text-align: center;
     }
     img {
-        vertical-align: middle;
-        
+        display: block;
+        margin: 0 auto;  
     }
 }
 
