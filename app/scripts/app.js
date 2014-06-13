@@ -5,7 +5,8 @@ var app = angular.module('tiyFinalApp', [
     'ngResource',
     'ngSanitize',
     'ngRoute',
-    'firebase'
+    'firebase',
+    'google-maps'
   ]);
 
 app.config(function ($routeProvider) {
@@ -38,7 +39,7 @@ app.config(function ($routeProvider) {
       })
       .when('/map', {
         templateUrl: 'views/map.html',
-        controller: ''
+        controller: 'MapCtrl'
       })
       .otherwise({
         redirectTo: '/'

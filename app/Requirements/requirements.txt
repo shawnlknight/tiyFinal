@@ -1,0 +1,72 @@
+Requirements Document 
+
+Project Name: "My Box"
+
+Description:
+	 Website application for Crossfitters. Generates random workout pulled from user’s database of workouts that they have created. User can view, add, update, and delete their workouts. Also includes a custom Google map feature to find CrossFit gyms based on location entered and gives reviews/info about specific gym clicked on.
+
+Technology:
+	-JavaScript
+		-jQuery: http://jquery.com/
+		-underscore.js: http://underscorejs.org/
+		-AngularJS: https://angularjs.org/
+		-Angular ui-bootstrap: http://angular-ui.github.io/bootstrap/
+	-HTML/CSS
+	-Twitter bootstrap: http://getbootstrap.com/
+	-Firebase: https://www.firebase.com/
+
+Features (MVP):
+	-Random workout generator
+	-Workout catalog
+		-User able to CRUD workouts
+	-Custom Google Map
+		-Shows only CrossFit gyms
+	-Place Details for gyms
+		-Images specific to gym clicked on
+		-Reviews specific to gym clicked on
+	-Responsive site
+		-Able to view on mobil device for connivence. 
+
+Stories:
+	Story 1
+	-Name: Random Workout Generator
+	-Size: Small
+	-Value Statement: 
+		“As a Crossfitter, I need to be given a random workout, so that I can keep my workouts varied and interesting to keep from getting bored.”
+	-Assumptions: 
+		-There will be a simple button the user clicks to generate the workout. The user will be able to click the button until they find a workout they like.
+		-We will use a function, probably underscore’s ._random, to pull a random workout from the database. 
+
+	Story 2
+	-Name: Workout Catalog
+	-Size: Medium
+	-Value Statement: 
+		“As a Crossfitter, I need to be able to view, add, update, and delete my workouts, so that I can keep track of my progress and enlarge my variety of workouts.
+	-Assumptions:
+		-There will be an upload solution using angular to handle user’s input of workouts.
+		-Will use firebase to store data.
+		-Be able to CRUD data using Firebase.
+
+	Story 3
+	-Name: Box Search
+	-Size: Large
+	-Value Statement: 
+		“As a Crossfitter, I need to be able to search for CrossFit boxes based on location and see reviews and images, so that I can have find the best gym to visit if I’m traveling or decide to find a gym near me.”
+	-Assumptions:
+		-Will use Google map API to have custom map filtering only CrossFit gyms in a specified radius of location user enters.
+		-Will use Google map API to pull Place Detail Requests based on gym user selected.
+		-This will give any information, images, reviews, ratings of Place selected.
+
+	Story 4
+	-Name: Firebase log in/out
+	-Size: Large
+	-Value Statement: 
+		“As a Crossfitter, I need the ability to log in/out of this application, so that only my workouts will show up when I log in.”
+	-Assumptions:
+		-Will use Firebase to authorize user’s logging in/out.
+		-Use Twitter and Facebook information to log in/out.
+
+Roadmap: v2.0
+	-Categorize workouts based on time needed for workout.
+	-Search functionality for workouts.
+	-Ability to share workouts via social media (Facebook, Twitter, etc.).

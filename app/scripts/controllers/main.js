@@ -18,10 +18,7 @@ app.controller('MainCtrl', function ($scope, Post) {
 	    $location.path('/posts/' + postId);
 	    $scope.post = {content: '', title: ''};
 	  });
-	};
-
-	$scope.updatePost = function (postId) {
-		Post.update(postId);
+	  	$scope.post = '';
 	};
 
 	$scope.deletePost = function (postId) {
