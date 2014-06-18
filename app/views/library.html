@@ -32,23 +32,25 @@
     </form>
   </div>
 
-
   <div class="col-lg-6 libraryList" ng-show="signedIn()">
     <h2>Workouts</h2>
-    <article ng-repeat="(postId, post) in posts" ng-show="signedIn() && post.owner === currentUser.username">
-      
-        <div class="workoutList">
-            <h4>{{ post.title | uppercase}}</h4>
-            <p> {{ post.content }} </p>
-        </div>
-        <div>
-          &mdash;
-          <span>submitted by {{ post.owner }}</span>
-          <br>
-          <a href="#/posts/{{ postId }}">update </a>|
-          <a href="" ng-click="deletePost(postId)">delete</a>
-        </div>
-    </article>
+      <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Show Workouts</button>
+      <hr>
+      <div collapse="isCollapsed">
+         <article ng-repeat="(postId, post) in posts" ng-show="signedIn() && post.owner === currentUser.username">
+            <div class="workoutList">
+                <h4>{{ post.title | uppercase}}</h4>
+                <p> {{ post.content }} </p>
+            </div>
+            <div>
+              &mdash;
+              <span>submitted by {{ post.owner }}</span>
+              <br>
+              <a href="#/posts/{{ postId }}">update </a>|
+              <a href="" ng-click="deletePost(postId)">delete</a>
+            </div>
+          </article>
+      </div>
   </div>
 </div>
 

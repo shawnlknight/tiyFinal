@@ -55,7 +55,6 @@ app.controller("SearchCtrl", function ($scope, $routeParams, $location, boxMap, 
                 });
             });
         });
-
 });
 
 app.controller("ResultsCtrl", function ($scope, $routeParams, $location, boxMap, scrollToElem) {

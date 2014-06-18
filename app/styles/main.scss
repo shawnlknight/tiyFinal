@@ -61,19 +61,6 @@ nav {
     z-index: 1;
 }
 
-.footer {
-    background: #242224;
-    width: 100%;
-    min-height: 50px;
-    p {
-        padding: 2%;
-        margin:0;
-        text-align: center;
-        color: #12ad04;
-        font-size: 18px;
-    }
-}
-
 .container-narrow > hr {
     margin: 30px 0;
 }
@@ -116,7 +103,7 @@ nav {
 
 }
 
-.login {
+.crud {
     margin: 10% auto;
     max-width: 500px;
     border-radius: 5px;
@@ -148,7 +135,6 @@ nav {
     padding-bottom: 10px;
 }
 
-/* Supporting marketing content */
 .marketing {
     background-color: #f5f5f5;
     margin: 40px 0;
@@ -215,6 +201,7 @@ article {
 
 .col-lg-6 {
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 .wodDescription {
@@ -287,6 +274,19 @@ textarea.form-control {
 
 .form-control {
     width: 400px;
+}
+
+.footer {
+    background: #242224;
+    width: 100%;
+    min-height: 50px;
+    p {
+        padding: 2%;
+        margin:0;
+        text-align: center;
+        color: #12ad04;
+        font-size: 18px;
+    }
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {

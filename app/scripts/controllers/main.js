@@ -2,15 +2,7 @@
 
 app.controller('MainCtrl', function ($scope, $location, Post) {
 	$scope.posts = Post.all;
-
-	// $scope.post = {'content': '', 'title': ''};
-
-	// $scope.submitPost = function () {
-	//   Post.create($scope.post).then(function () {
-	//     $scope.post = {'content': '', 'title': ''};
-	//   });
-	// };
-
+	$scope.isCollapsed = true;
 	$scope.post = {content: '', title: ''};
 
 	$scope.submitPost = function () {
@@ -23,5 +15,4 @@ app.controller('MainCtrl', function ($scope, $location, Post) {
 	$scope.deletePost = function (postId) {
 		Post.delete(postId);
 	};
-
 });
