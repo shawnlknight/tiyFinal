@@ -1,12 +1,17 @@
-	<form ng-show="signedIn()" ng-submit="updatePost(wodId, post)">
-      <div class="form-group">
-        <input type="text" class="form-control" value="{{post.title}}" ng-model="post.title">
-      </div>
-      <div class="form-group">
-      <textarea class="form-control" value="{{post.content}}" ng-model="post.content"></textarea>
-      </div>
-      <button class="btn btn-default">Update</button>
-    </form>
 
 
-<a href="#/library">Back to Posts</a>
+<div class="row-marketing">
+	<div class="login">
+		<form ng-show="signedIn()" ng-submit="updatePost(wodId, post)">
+	      <div class="form-group">
+	        <input type="text" class="form-control" value="{{post.title}}" ng-model="post.title">
+	      </div>
+	      <div class="form-group">
+	      <textarea class="form-control" value="{{post.content}}" ng-model="post.content"></textarea>
+	      </div>
+	      <button class="btn btn-default loginBtn" ng-href="library">Update</button>
+	    </form>
+	</div>
+</div>
+
+

@@ -6,7 +6,9 @@ var app = angular.module('tiyFinalApp', [
     'ngSanitize',
     'ngRoute',
     'firebase',
-    'google-maps'
+    // 'ui-bootstrap',
+    'google-maps',
+    'ngGPlaces'
   ]);
 
 app.config(function ($routeProvider) {
@@ -40,6 +42,10 @@ app.config(function ($routeProvider) {
       .when('/map', {
         templateUrl: 'views/map.html',
         controller: 'MapCtrl'
+      })
+      .when('/search/:zipcode/:place', {
+        templateUrl: 'views/map.html',
+        controller: 'SearchCtrl'
       })
       .otherwise({
         redirectTo: '/'

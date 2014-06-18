@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('MainCtrl', function ($scope, Post) {
+app.controller('MainCtrl', function ($scope, $location, Post) {
 	$scope.posts = Post.all;
 
 	// $scope.post = {'content': '', 'title': ''};
@@ -15,10 +15,9 @@ app.controller('MainCtrl', function ($scope, Post) {
 
 	$scope.submitPost = function () {
 	  Post.create($scope.post).then(function (postId) {
-	    $location.path('/posts/' + postId);
+	    $location.path('library');
 	    $scope.post = {content: '', title: ''};
 	  });
-	  	$scope.post = '';
 	};
 
 	$scope.deletePost = function (postId) {

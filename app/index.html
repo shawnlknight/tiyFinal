@@ -66,11 +66,14 @@
     <script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
     <script src="bower_components/angularfire/angularfire.js"></script>
     <script src="bower_components/lodash/dist/lodash.compat.js"></script>
-    
     <!-- endbower -->
     <!-- endbuild -->
-    <script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <!--  <script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&sensor=false&key=AIzaSyAVp8xPNuVLCSMWfPS9AX3rZrR-X5patk8"></script> 
     <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+    
+    <!-- <script src="https://maps.googleapis.com/maps/api/place/details/json?reference=CoQBewAAACBdAHEnJW8BCDEK4tmkXb_8VaBz7uZgZ4OCCjN6GC52Tag1e7OkZkdKjKJd8K3n3AJTZ3AZ0kZWiC__gZZ2pY_BVi3oKFZD-Yl_OVymIOb-zl9l3TxDV0FVkMDVpF90_WFC7o8O59A-0YiynIjLCxH66fj2fsXydi189e953c_qEhDOO9Is-O3mBiV47enfSMyJGhRDq3AP5FIjork-gwE-CsDN9cm_8w&sensor=true&key=AIzaSyAVp8xPNuVLCSMWfPS9AX3rZrR-X5patk8"></script> -->
+    <script src="bower_components/angularjs-google-places/dist/angularjs-google-places.min.js"></script>
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
@@ -79,6 +82,7 @@
         <script src="scripts/controllers/nav.js"></script>
         <script src="scripts/controllers/user.js"></script>
         <script src="scripts/controllers/map.js"></script>
+        <script src="scripts/services/mapService.js"></script>
         <script src="scripts/services/userService.js"></script>
         <script src="scripts/services/thisUser.js"></script>
         <script src="scripts/services/mainService.js"></script>

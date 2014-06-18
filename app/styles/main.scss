@@ -277,9 +277,12 @@ textarea.form-control {
     padding-left: 25%;
 }
 
-.angular-google-map-container { 
-    height: 400px; 
-    width: 800px;
+.table tr.active {
+  background-color: #12ad04;
+}
+
+.table tr.active td {
+  background-color: transparent !important;
 }
 
 .form-control {
@@ -290,33 +293,15 @@ textarea.form-control {
         display: none !important;
 }
 
-// .flex-container {
-// display: -webkit-flex;
-// -webkit-flex-direction: row;
-// -webkit-justify-content: space-between;
-// -webkit-flex-wrap: wrap;
-// }
-
-/* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    .container {
-        
-        // border: 1px solid #e5e5e5;
-    }
-
-    /* Remove the padding we set earlier */
     .header,
     .marketing {
         padding-left: 0;
         padding-right: 0;
     }
-
-    /* Space out the masthead */
     .header {
         margin-bottom: 30px;
     }
-
-    /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
         border-bottom: 0;
     }
@@ -326,7 +311,6 @@ textarea.form-control {
     }
 }
 
-/* Responsive: Portrait mobile */
 @media screen and (max-width: 960px) {
     .pageTitle {
         margin-top: 18%;
