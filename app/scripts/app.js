@@ -18,12 +18,10 @@ app.config(function ($routeProvider) {
       controller: 'MainCtrl'
     })
     .when('/random', {
-        authRequired: true,
         templateUrl: 'views/random.html',
-        controller: ''
+        controller: 'RandomCtrl'
       })
     .when('/library', {
-        authRequired: true,
         templateUrl: 'views/library.html',
         controller: 'MainCtrl'
       })

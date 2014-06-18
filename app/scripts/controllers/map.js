@@ -29,10 +29,8 @@ app.controller("SearchCtrl", function ($scope, $routeParams, $location, boxMap, 
         }, function (results, status) {
             var lat = results[ 0 ].geometry.location.lat(),
                 lng = results[ 0 ].geometry.location.lng();
-
-                $scope.$apply(function () {
-                    $scope.searchplace = results[ 0 ] && results[ 0 ].formatted_address;
-                });
+                
+            $scope.searchplace = results[ 0 ] && results[ 0 ].formatted_address;
 
             boxMap.placeService.textSearch({
                 query: $scope.place,

@@ -1,5 +1,19 @@
 'use strict';
 
+// app.factory('$firebaseArr', ['$firebase', 'FIREBASE_URL', '$filter', function($firebase, FIREBASE_URL $filter) {
+//     return function(ref) {
+//         var dataObj = $firebase(ref);
+//         var dataArr = angular.extend([], dataObj);
+
+//         dataObj.$on('change', function() {
+//             dataArr.length = 0;
+//             angular.extend(dataArr, $filter('orderByPriority')(dataObj));
+//         });
+//         console.log(dataArr);
+//         return dataArr;
+//     }
+// }]);
+
 app.factory('Post',
   function ($firebase, FIREBASE_URL, User) {
     var ref = new Firebase(FIREBASE_URL + 'posts');
