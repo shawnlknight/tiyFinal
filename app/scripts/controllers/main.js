@@ -16,3 +16,5 @@ app.controller('MainCtrl', function ($scope, $location, Post) {
 		Post.delete(postId);
 	};
 });
+
+
