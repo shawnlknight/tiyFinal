@@ -1,16 +1,26 @@
 {
 "data": [
-	{"title": "Fran", "content": "21-15-9: thrusters (95#) & pull ups"},
-	{"title": "Cindy", "content": "20 min AMRAP: 5 pull ups, 10 push ups, 15 air squats"},
-	{"title": "Helen", "content": "3 rds: 400m run, 21 KB swings (50#), 12 pull ups"},
-	{"title": "Murph", "content": "For time: 1 mile run, 100 pull ups, 200 push ups, 300 squats"},
-	{"title": "Grace", "content": "30 reps for time: Clean & Jerk (135#)"},
-	{"title": "Annie", "content": "50-40-30-20-10 reps for time: Double unders & sit-ups"},
-	{"title": "Angie", "content": "For time: 100 pull ups, 100 push ups, 100 sit ups, 100 squats"},
-	{"title": "CrossFit Total", "content": "1 rep max of back squat, shoulder press, deadlift"},
-	{"title": "Ryan", "content": "5 rds: 7 Muscle ups, 21 burpees"},
-	{"title": "Amanda", "content": "9-5-7 reps for time: muscle up, snatch (135#)"},
-	{"title": "Mary", "content": "AMRAP 20 min: 5 HSPU, 10 pistols, 15 pull ups"},
-	{"title": "Death by burpees", "content": "100 burpees for time"}
+	{"title": "Fran", "content": "21-15-9:<br> thrusters (95#)<br> pull ups"},
+	{"title": "Cindy", "content": "20 min AMRAP:<br> 5 pull ups<br> 10 push ups<br> 15 air squats"},
+	{"title": "Helen", "content": "3 rds:<br> 400m run<br> 21 KB swings (50#)<br> 12 pull ups"},
+	{"title": "Murph", "content": "For time:<br> 1 mile run<br> 100 pull ups<br> 200 push ups<br> 300 squats"},
+	{"title": "Grace", "content": "30 reps for time:<br> Clean & Jerks (135#)"},
+	{"title": "Annie", "content": "50-40-30-20-10 reps for time:<br> Double unders & sit-ups"},
+	{"title": "Angie", "content": "For time:<br> 100 pull ups<br> 100 push ups<br> 100 sit ups<br> 100 squats"},
+	{"title": "CrossFit Total", "content": "1 rep max:<br> back squat<br> shoulder press<br> deadlift"},
+	{"title": "Ryan", "content": "5 rds:<br> 7 Muscle ups<br> 21 burpees"},
+	{"title": "Amanda", "content": "9-5-7 reps for time:<br> muscle up<br> snatch (135#)"},
+	{"title": "Mary", "content": "AMRAP 20 min:<br> 5 HSPU<br> 10 pistols<br> 15 pull ups"},
+	{"title": "Death by burpees", "content": "100 burpees for time"},
+	{"title": "Barbara", "content": "5 rds:<br> 20 pull ups<br> 30 push ups<br> 40 sits ups<br> 50 squats"},
+	{"title": "Karen", "content": "150 wall ball shots"},
+	{"title": "Nancy", "content": "5 rds:<br> 400m run<br> 15 overhead squats (95#)"},
+	{"title": "Badger", "content": "3 rds:<br> 30 squat cleans (95#)<br> 30 pull ups<br> run 800m"},
+	{"title": "Nate", "content": "20 AMRAP:<br> 2 muscle ups<br> 4 HSPU<br> 8 kettlebell swings (2-pood)"},
+	{"title": "Randy", "content": "75 power snatchs (75#)"},
+	{"title": "DT", "content": "5 rds:<br> 12 deadlifts<br> 9 hang power cleans<br> 6 push jerks<br> (155#)"},
+	{"title": "Helton", "content": "3 rds:<br> Run 800m<br> 30 dumbbell squat cleans (50#)<br> 30 burpees"},
+	{"title": "Leber-swole", "content": "For time:<br> 400m run<br> 26 pull ups<br> 26 deadlifts (255#)<br> 26 pull ups<br> 26 burpees<br> 400m run"}
+
 
 ]}

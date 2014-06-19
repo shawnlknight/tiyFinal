@@ -12,7 +12,7 @@
 <div class="jumbotron">
   <div class="pageTitle">
   	<h2 class="titleName">Box Locator</h2>
-    <p class="lead">Locate a Box near you</p>
+    <p class="lead">Locate a box near you</p>
   </div>
 </div>
 
@@ -20,7 +20,7 @@
   <div class="container-fluid">
     <div ng-controller="MapCtrl">
       <div class="container-fluid search-zipcode ">
-        <h1>{{searchplace}}</h1>
+        <h1 class="centerHeader">{{searchplace}}</h1>
         <form class="form-inline pull-left" name="zipCodeFrm" novalidate>
             <label class="search-label" for="zip"> 
               <input type="text" name="zip" placeholder="Enter zip code" required ng-pattern="/^\d{5,6}$/" ng-model="zipCode" class="input-medium search-query">
@@ -35,7 +35,7 @@
           <div id="mapContainer" style="width: 500px;height:500px;" gmap data="data"></div>
         </div>
         <div heading="List View" active="tabs.list">
-          <table class="table table-striped table-hover">
+          <table class="table table-hover">
             <thead>
               <tr>
                 <th>NAME</th>
@@ -46,23 +46,11 @@
             </thead>
             <tbody>
               <tr ng-repeat="details in data" ng-class="{active:$index==selectedMarker}" id="listItem{{$index}}">
-                
                 <td>{{details.name}}</td>
                 <td>{{details.formatted_address}}</td>
                 <td>{{details.phone}}</td>
                 <td><a href="{{details.website}}">{{details.website}}</a></td>
-<!--                 <td>{{getLocation(details)}}</td> -->
-                <!-- <td ng-repeat="item in websites"> -->
-                   
-                  <!-- <a href="{{item.website}}">{{item.website}}</a>     -->
-                   
-                  
-
-                <!-- </td> -->
-              
-             <!--  <tr ng-repeat="websites in website" >
-                <td></td>
-              </tr> -->
+              </tr>
             </tbody>
           </table>
         </div>
