@@ -8,8 +8,14 @@ var app = angular.module('tiyFinalApp', [
     'firebase',
     'ui.bootstrap',
     'google-maps',
-    'ngGPlaces'
+    'ngGPlaces',
+    'underscore'
   ]);
+
+var underscore = angular.module('underscore', []);
+underscore.factory('_', function() {
+  return window._; 
+});
 
 app.config(function ($routeProvider) {
   $routeProvider

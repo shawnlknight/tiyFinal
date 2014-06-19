@@ -18,11 +18,12 @@
 </div>
 
 <div class="row marketing">
-    <div class="col-lg-6">
-        <article ng-show-auth="login">
-            
-        </article>
-    </div>
+  <div class="col-lg-6">
+    <article class="randomness" ng-repeat="wod in workout">
+      {{wod.title}}
+    </article>
+
+  </div>
 </div>
 
 
