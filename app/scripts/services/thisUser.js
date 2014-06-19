@@ -2,9 +2,7 @@
 
 app.factory('User', function ($firebase, $rootScope, FIREBASE_URL, Auth) {
   var ref = new Firebase(FIREBASE_URL + 'users');
-
   var users = $firebase(ref);
-
   var User = {
     create: function (authUser, username) {
       users[username] = {

@@ -10,7 +10,6 @@ app.controller('RandomCtrl', function ($scope, $http, _) {
 			console.log('Random workout', workout);
 			$(".randomTitle").html(workout.title);
 			$(".randomContent").html(workout.content);
-
 		};
 	});
 });

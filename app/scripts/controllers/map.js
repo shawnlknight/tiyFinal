@@ -50,7 +50,6 @@ app.controller("SearchCtrl", function ($scope, $routeParams, $location, boxMap, 
                     	    		console.log($scope.data);
                     	    	});
                     });
-
                 });
             });
         });
@@ -91,7 +90,6 @@ app.directive("gmap", [ "boxMap", function (boxMap) {
                 boxMap.initializeMap(elem[ 0 ]);
                 renderMap(newval);
             });
-
         }
     };
 }]);
