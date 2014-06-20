@@ -2,7 +2,9 @@
 
 app.factory('Post', function ($firebase, FIREBASE_URL, User) {
   var ref = new Firebase(FIREBASE_URL + 'posts');
+  ref.setPriority(0);
   var posts = $firebase(ref);
+  console.log("posts are", posts)
   var Post = {
     all: posts,
     create: function (post) {
@@ -21,6 +23,7 @@ app.factory('Post', function ($firebase, FIREBASE_URL, User) {
       }
     },
     find: function (postId) {
+      console.log("posts are ",posts.$child(postId) )
       return posts.$child(postId);
     },
     delete: function (postId) {
