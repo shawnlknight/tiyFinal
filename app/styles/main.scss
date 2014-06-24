@@ -15,13 +15,14 @@ nav {
     background-color: #242224;
 }
 
-.nav li a {
-    color: #d6d6d6;
-    border-radius: 0;
-}
-
-.nav li a:hover {
-    color: #000;
+.nav {
+    li a {
+        color: #d6d6d6;
+        border-radius: 0;
+    }
+     li a:hover {
+        color: #000;
+    }
 }
 
 .nav-pills {
@@ -36,6 +37,7 @@ nav {
     color: #000;
     background-color: #d6d6d6;
 }
+
 
 .header {
     max-height: 15px;
@@ -67,11 +69,11 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    max-height: 450px;
+    max-height: 370px;
 }
 
 .pageTitle {
-    margin: 10% auto;
+    margin: 8% auto;
     min-height: 170px;
     max-width: 350px;
     border-radius: 5px;
@@ -91,7 +93,7 @@ nav {
 }
 
 .crud {
-    margin: 10% auto;
+    margin: 0 auto;
     max-width: 500px;
     border-radius: 5px;
     color: #fff;
@@ -260,7 +262,7 @@ textarea.form-control {
 }
 
 .randomness {
-    padding-left: 40%;
+    padding-left: 35%;
     margin-bottom: 200px;
     border: none;
 }
@@ -330,6 +332,9 @@ textarea.form-control {
     #wodForm {
         padding-left: 10%;
     }
+    .randomness {
+        margin-left: 5%;
+    }
     .angular-google-map-container { 
         height: 400px; 
         width: 500px;
@@ -338,7 +343,7 @@ textarea.form-control {
 
 @media screen and (max-width: 730px) {
     .pageTitle {
-        margin-top: 40%;
+        margin-top: 25%;
     }
     #wodForm {
         padding-left: 2%;
@@ -347,11 +352,16 @@ textarea.form-control {
         height: 400px; 
         width: 500px;
     }
-    .angular-google-map-container { 
-        height: 400px; 
-        width: 500px;
-    }
     .boxMap {
         padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pageTitle {
+        margin-top: 40%;
+    }
+    .randomness {
+        margin-left: 0;
     }
 }

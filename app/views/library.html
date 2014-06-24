@@ -17,7 +17,10 @@
 </div> 
 
 <div class="row marketing">
-  <h1 ng-hide="signedIn()">Sign In To See Your WODS</h1>
+  <div ng-hide="signedIn()">
+    <h1>Sign In To See Your WODS</h1>
+    <a ng-href="#/login"><button class="btn btn-lg btn-default crossfit">Login</button></a>
+  </div>
   <div class="col-sm-6" ng-controller="NavCtrl" ng-show="signedIn()">
     <h2>Enter Your Workout</h2>
     <button class="btn btn-default crossfit" ng-click="isCollapsed = !isCollapsed">Create WOD</button>

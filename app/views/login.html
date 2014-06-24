@@ -1,7 +1,23 @@
+<div class="header">
+  <ul class="nav nav-pills">
+    <h1 class="myBox">My Box</h1>
+    <li><a ng-href="#">Home</a></li>
+    <li><a ng-href="#/library">WOD Library</a></li>
+    <li><a ng-href="#/random">Random WOD</a></li>
+    <li><a ng-href="#/map">Box Locator</a></li>
+    <div ng-include="'views/nav.html'"></div>
+  </ul>
+</div>
+
+<div class="jumbotron">
+  <div class="pageTitle">
+   <h2 class="titleName">User Login</h2> 
+  </div> 
+</div> 
+
 <div class="row-marketing">
 	<div class="crud">
 		<div class="auth-forms">
-		  <h2>User Login</h2>
 		  <form ng-submit="login()">
 		    <p ng-show="error" class="text-danger">{{ error }}</p>
 		    <input type="email" ng-model="user.email" placeholder="Email" class="form-control"><br>
