@@ -19,6 +19,7 @@ nav {
     li a {
         color: #d6d6d6;
         border-radius: 0;
+        padding: 5px 10px
     }
      li a:hover {
         color: #000;
@@ -38,16 +39,32 @@ nav {
     background-color: #d6d6d6;
 }
 
+.myBox {
+    float: left;
+    color: #12ad04;
+    padding-right: 250px;
+    margin-top: 0;
+    margin-left: 50px;
+}
 
 .header {
     max-height: 15px;
     margin-top: 0;
     padding-bottom: 0;
-    opacity: 0.9;
+    opacity: 0.95;
     top: 0;
     width: 100%;
     position: fixed;
     z-index: 1;
+}
+
+.dropdown-menu {
+    background-color: #242224;
+    width: 300px;
+    li {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
 }
 
 .container-narrow > hr {
@@ -92,16 +109,23 @@ nav {
 
 }
 
+.user {
+    background-color: #242224;
+}
+
 .crud {
     margin: 0 auto;
-    max-width: 500px;
-    border-radius: 5px;
+    max-width: 400px;
+    border-radius: 2px;
     color: #fff;
     background-color: #242224;
     opacity: 0.95;
     text-align: center;
     h2 {
         color: #12ad04;
+    }
+    form input {
+        padding-top: 5px;
     }
     .loginBtn {
         font-size: 20px;
@@ -154,13 +178,6 @@ nav {
     }
 }
 
-.myBox {
-    float: right;
-    color: #12ad04;
-    padding-right: 100px;
-    margin-left: 50px;
-}
-
 .form-control {
     margin-bottom: 10px;
     background: #f1f1f1;
@@ -172,14 +189,6 @@ nav {
 
 .wodList {
     font-size: 115%;
-}
-
-.workoutList {
-    max-width: 400px;
-    min-height: 100px;
-    h4 {
-        text-align: center;
-    }
 }
 
 article {
@@ -240,8 +249,25 @@ textarea.form-control {
     width: 400px;
 }
 
+.newWodForm {
+    input {
+        width: 400px;
+    }
+    textarea {
+        width: 400px;
+    }
+}
+
 .libraryList {
     border-left: 1px solid #c9c9c9;
+}
+
+.workoutList {
+    max-width: 400px;
+    min-height: 100px;
+    h4 {
+        text-align: center;
+    }
 }
 
 .boxMap {
@@ -305,10 +331,6 @@ textarea.form-control {
     .jumbotron {
         border-bottom: 0;
     }
-    .angular-google-map-container { 
-        height: 400px; 
-        width: 600px;
-    }
 }
 
 @media screen and (max-width: 960px) {
@@ -316,9 +338,8 @@ textarea.form-control {
         margin-top: 18%;
     }
     .myBox {
-        float: none;
-        margin-right: 0;
-        margin-left: 0;
+        padding-right: 100px;
+        margin-left: 50px;
     }
     .nav-pills {
         font-size: 16px;
@@ -335,10 +356,6 @@ textarea.form-control {
     .randomness {
         margin-left: 5%;
     }
-    .angular-google-map-container { 
-        height: 400px; 
-        width: 500px;
-    }
 }
 
 @media screen and (max-width: 730px) {
@@ -348,20 +365,91 @@ textarea.form-control {
     #wodForm {
         padding-left: 2%;
     }
-    .angular-google-map-container { 
-        height: 400px; 
-        width: 500px;
-    }
-    .boxMap {
-        padding-left: 2%;
-    }
 }
 
 @media screen and (max-width: 480px) {
+    .myBox {
+        font-size: 26px;
+        padding-right: 30px;
+        margin-top: 4px;
+        margin-left: 20px;
+    }
     .pageTitle {
         margin-top: 40%;
     }
     .randomness {
         margin-left: 0;
     }
+    .jumbotron {
+        background: #242224;
+        background-attachment: fixed;
+        max-height: 250px;
+    }
+    .pageTitle {
+        margin: 50px auto;
+        max-width: 320px;
+    }
+    .crud {
+        max-width: 400px;
+        border-radius: none;
+        input {
+            width: 300px;
+        }
+        .loginBtn {
+            font-size: 19px;
+            padding: 10px 10px;
+        }
+        .cancel {
+            float: none;
+        }
+    }
+    article {
+        margin-left: 0;
+    }
+    .libraryList {
+        border-left: none;
+    }
+
+    .workoutList {
+        max-width: 350px;
+        min-height: 100px;
+        h4 {
+            text-align: center;
+        }
+    }
+    .newWodForm {
+        input {
+            width: 300px;
+        }
+        textarea {
+            width: 300px;
+        }
+    }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : landscape) {
+    .nav {
+        height: 30px;
+        li a {
+            font-size: 12px;
+        }
+
+    }
+    .myBox {
+        font-size: 16px;
+        padding-right: 60px;
+        margin-left: 20px;
+    }
+    .dropdown-menu {
+
+        li {
+            font-size: 12px;
+            margin-bottom: 6px;
+        }
+    }
+
+
 }

@@ -1,11 +1,25 @@
 <div class="header">
-  <ul class="nav nav-pills">
+  <ul class="nav nav-pills visible-sm visible-md visible-lg">
   	<h1 class="myBox">My Box</h1>
     <li><a ng-href="#">Home</a></li>
     <li><a ng-href="#/library">WOD Library</a></li>
     <li><a ng-href="#/random">Random WOD</a></li>
     <li class="active"><a ng-href="#/map">Box Locator</a></li>
-    <div ng-include="'views/nav.html'"></div>
+    <li><div ng-include="'views/nav.html'"></div></li>
+  </ul>
+  <ul class="nav nav-pills visible-xs">
+    <li class="dropdown">
+      <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i>
+        <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation"><a ng-href="#">Home</a></li>
+            <li role="presentation"><a ng-href="#/library">WOD Library</a></li>
+            <li role="presentation"><a ng-href="#/random">Random WOD</a></li>
+            <li role="presentation"><a ng-href="#/map">Box Locator</a></li>
+        </ul>
+      </a>
+    </li>
+    <h1 class="myBox">My Box</h1>
+    <li><div class="loginRegister" ng-include="'views/nav.html'"></div></li>
   </ul>
 </div>
 
@@ -32,7 +46,9 @@
     <div class="row-fluid">
       <div ng-controller="ResultsCtrl">
         <div heading="Map View" active="tabs.map">
-          <div id="mapContainer" style="width: 500px;height:500px;" gmap data="data"></div>
+          <div class="visible-md visible-lg" id="mapContainer" style="width: 750px; height:400px;" gmap data="data"></div>
+          <div class="visible-sm" id="mapContainer" style="width: 650px; height:400px;" gmap data="data"></div>
+          <div class="visible-xs" id="mapContainer" style="width: 260px; height:300px;" gmap data="data"></div>
         </div>
         <div heading="List View" active="tabs.list">
           <table class="table table-hover">

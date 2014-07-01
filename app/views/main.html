@@ -1,17 +1,31 @@
 <div class="header">
-  <ul class="nav nav-pills">
+  <ul class="nav nav-pills visible-sm visible-md visible-lg">
     <h1 class="myBox">My Box</h1>
     <li class="active"><a ng-href="#">Home</a></li>
     <li><a ng-href="#/library">WOD Library</a></li>
     <li><a ng-href="#/random">Random WOD</a></li>
     <li><a ng-href="#/map">Box Locator</a></li>
-    <div ng-include="'views/nav.html'"></div>
+    <li><div ng-include="'views/nav.html'"></div></li>
+  </ul>
+  <ul class="nav nav-pills visible-xs">
+    <li class="dropdown">
+      <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i>
+        <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation"><a ng-href="#">Home</a></li>
+            <li role="presentation"><a ng-href="#/library">WOD Library</a></li>
+            <li role="presentation"><a ng-href="#/random">Random WOD</a></li>
+            <li role="presentation"><a ng-href="#/map">Box Locator</a></li>
+        </ul>
+      </a>
+    </li>
+    <h1 class="myBox">My Box</h1>
+    <li><div class="loginRegister" ng-include="'views/nav.html'"></div></li>
   </ul>
 </div>
 
 <div class="jumbotron">
   <div class="pageTitle">
-    <h2 class="titleName">Welcome to My Box</h2>
+    <h2 class="titleName">My Box</h2>
     <p class="lead">For the CrossFit Athlete</p>
   </div>
 </div>
@@ -19,15 +33,15 @@
 <div class="row marketing">
   <div class="col-md-4">
     <a ng-href="#/library"><h3>Track Progress</h3></a>
-    <img src="/images/progress.png">
+    <img src="/images/progress.png" width="200" heigth="200">
   </div>
   <div class="col-md-4">
     <a ng-href="#/random"><h3>Random WOD Generator</h3></a>
-    <img src="/images/kettlebell.png" width="200" heigth="200">
+    <img src="/images/kettlebell.png" width="160" heigth="160">
   </div>
   <div class="col-md-4">
     <a ng-href="#/map"><h3>Box Locator</h3></a>
-    <img src="/images/map.png" width="300" heigth="300">
+    <img src="/images/map.png" width="220" heigth="220">
   </div>
 </div>
 
