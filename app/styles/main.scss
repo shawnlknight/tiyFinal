@@ -91,8 +91,8 @@ nav {
 
 .pageTitle {
     margin: 8% auto;
-    min-height: 170px;
-    max-width: 350px;
+    min-height: 140px;
+    max-width: 340px;
     border-radius: 5px;
     color: #fff;
     background-color: #242224;
@@ -282,8 +282,21 @@ textarea.form-control {
   background-color: transparent !important;
 }
 
+.mobileMap {
+    ul {
+        border-bottom: 1px solid #c9c9c9;
+        list-style-type: none;
+        padding-left: 0;
+    }
+}
+
 .centerHeader {
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.mobileHeader {
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -334,9 +347,6 @@ textarea.form-control {
 }
 
 @media screen and (max-width: 960px) {
-    .pageTitle {
-        margin-top: 18%;
-    }
     .myBox {
         padding-right: 100px;
         margin-left: 50px;
@@ -359,9 +369,6 @@ textarea.form-control {
 }
 
 @media screen and (max-width: 730px) {
-    .pageTitle {
-        margin-top: 25%;
-    }
     #wodForm {
         padding-left: 2%;
     }
@@ -374,20 +381,24 @@ textarea.form-control {
         margin-top: 4px;
         margin-left: 20px;
     }
-    .pageTitle {
-        margin-top: 40%;
-    }
     .randomness {
         margin-left: 0;
     }
     .jumbotron {
         background: #242224;
         background-attachment: fixed;
-        max-height: 250px;
+        max-height: 180px;
     }
     .pageTitle {
-        margin: 50px auto;
+        margin: 14px auto;
+        min-height: 130px;
         max-width: 320px;
+        border-radius: 5px;
+        text-align: center;
+        .btn {
+            font-size: 18px;
+            padding: 10px 20px;
+        }
     }
     .crud {
         max-width: 400px;
@@ -409,7 +420,6 @@ textarea.form-control {
     .libraryList {
         border-left: none;
     }
-
     .workoutList {
         max-width: 350px;
         min-height: 100px;
@@ -425,6 +435,15 @@ textarea.form-control {
             width: 300px;
         }
     }
+    .randomness {
+        padding-left: 0;
+        h1 {
+            font-size: 18px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+    }
 }
 
 @media only screen
@@ -436,20 +455,16 @@ and (orientation : landscape) {
         li a {
             font-size: 12px;
         }
-
     }
     .myBox {
-        font-size: 16px;
+        font-size: 12px;
         padding-right: 60px;
         margin-left: 20px;
     }
     .dropdown-menu {
-
         li {
             font-size: 12px;
             margin-bottom: 6px;
         }
     }
-
-
 }

@@ -6,7 +6,7 @@ app.controller("MapCtrl", function ($scope, $location, $routeParams) {
     };
 });
 
-app.controller("SearchCtrl", function ($scope, $routeParams, $location, boxMap, $http, $filter, ngGPlacesAPI) {
+app.controller("SearchCtrl", function ($scope, $routeParams, $location, boxMap, $filter, ngGPlacesAPI) {
     $scope.zipCode = $routeParams.zipcode;
     $scope.place = $routeParams.place;
     $scope.websites = [];
