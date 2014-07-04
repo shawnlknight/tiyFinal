@@ -9,8 +9,8 @@
   </ul>
   <ul class="nav nav-pills visible-xs">
     <li class="dropdown">
-      <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i>
-        <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="dropdownMenu2">
+      <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></b>
+        <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="dropdownMenu">
             <li role="presentation"><a ng-href="#">Home</a></li>
             <li role="presentation"><a ng-href="#/library">WOD Library</a></li>
             <li role="presentation"><a ng-href="#/random">Random WOD</a></li>
@@ -25,7 +25,7 @@
 
 <div class="jumbotron">
   <div class="pageTitle">
-   <h2 class="titleName">Track your progess</h2> 
+   <h2 class="titleName">Track Your Progress</h2> 
   </div> 
 </div> 
 
@@ -35,8 +35,7 @@
     <a ng-href="#/login"><button class="btn btn-lg btn-default crossfit">Login</button></a>
   </div>
   <div class="col-sm-6" ng-controller="NavCtrl" ng-show="signedIn()">
-    <h2>Enter Your Workout</h2>
-    <button class="btn btn-default crossfit" ng-click="isCollapsed = !isCollapsed">Create WOD</button>
+    <button class="btn btn-lg btn-default crossfit" ng-click="isCollapsed = !isCollapsed">Enter WOD</button>
     <hr>
     <div collapse="isCollapsed">
       <form class="newWodForm" role="search" ng-submit="submitPost()">
@@ -56,7 +55,7 @@
     <h2>WODS</h2>
     <article ng-repeat="(postId, post) in posts" ng-show="signedIn() && post.owner === currentUser.username">
       <div class="workoutList">
-        <h4>{{ post.title | uppercase}}</h4>
+        <h4>{{ post.title | uppercase }}</h4>
         <pre><p>{{ post.content }}</p></pre>
       </div>
       <div>
@@ -64,8 +63,8 @@
         &mdash;
         <span>{{ post.owner }}</span>
         <br>
-        <a href="#/posts/{{ postId }}">update </a>|
-        <a href="" ng-click="deletePost(postId)">delete</a>
+        <a class="btn btn-sm btn-warning" href="#/posts/{{ postId }}">Update </a>
+        <a class="btn btn-sm btn-danger" href="" ng-click="deletePost(postId)">Delete</a>
       </div>
     </article>
   </div>
