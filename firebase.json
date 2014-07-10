@@ -1,0 +1,9 @@
+{
+  "firebase": "shawn-final",
+  "public": "app",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
