@@ -1,6 +1,6 @@
 {
   "firebase": "shawn-final",
-  "public": "./dist",
+  "public": "/dist",
   "ignore": [
     "firebase.json",
     "**/.*",
