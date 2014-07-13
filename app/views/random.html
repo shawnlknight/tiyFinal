@@ -5,7 +5,29 @@
     <li><a ng-href="#/library">WOD Library</a></li>
     <li class="active"><a ng-href="#/random">Random WOD</a></li>
     <li><a ng-href="#/map">Box Locator</a></li>
-    <li><div ng-include="'views/nav.html'"></div></li>
+    <li class="dropdown">
+      <a href="" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b>
+        <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="dropdownMenu1">
+          <div ng-controller="NavCtrl">
+            <ul class="nav navbar-nav navbar-left" ng-show="signedIn()">
+              <li role="presentation" class="whoAmI"> User: {{ currentUser.username }}</li>
+              <li role="presentation">
+                <a href="#" ng-click="logout()">Logout</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left" ng-hide="signedIn()">
+              <li role="presentation">
+                <a href="#/register">Register</a>
+              </li>
+              <br>
+              <li role="presentation">
+                <a href="#/login">Log In</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </a>
+    </li>
   </ul>
   <ul class="nav nav-pills visible-xs">
     <li class="dropdown">
@@ -15,11 +37,21 @@
             <li role="presentation"><a ng-href="#/library">WOD Library</a></li>
             <li role="presentation"><a ng-href="#/random">Random WOD</a></li>
             <li role="presentation"><a ng-href="#/map">Box Locator</a></li>
+            <div ng-controller="NavCtrl">
+              <li ng-show="signedIn()" role="presentation">
+                <a href="#" ng-click="logout()">Logout</a>
+              </li>
+              <li ng-hide="signedIn()" role="presentation">
+                <a href="#/register">Register</a>
+              </li>
+              <li ng-hide="signedIn()" role="presentation">
+                <a href="#/login">Log In</a>
+              </li>
+            </div>
         </ul>
       </a>
     </li>
     <h1 class="myBox">My Box</h1>
-    <li><div class="loginRegister" ng-include="'views/nav.html'"></div></li>
   </ul>
 </div>
 

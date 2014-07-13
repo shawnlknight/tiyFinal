@@ -13,6 +13,10 @@ body {
     background-color: #eaeaea;
 }
 
+.whoAmI {
+    color: #d6d6d6;
+}
+
 nav {
     
     background-color: #242224;
@@ -40,6 +44,11 @@ nav {
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #000;
     background-color: #d6d6d6;
+}
+
+.fa-bars {
+    margin-top: 10%;
+    font-size: 24px;
 }
 
 .myBox {
@@ -182,6 +191,10 @@ nav {
         display: block;
         margin: 0 auto;  
     }
+}
+
+.mapImage {
+    border: 1px solid #c9c9c9;
 }
 
 .form-control {
@@ -383,9 +396,15 @@ textarea.form-control {
 @media screen and (max-width: 480px) {
     .myBox {
         font-size: 26px;
-        padding-right: 30px;
         margin-top: 4px;
-        margin-left: 20px;
+        margin-left: 50px;
+    }
+    .dropdown-menu {
+        li {
+            font-size: 20px;
+            margin-bottom: 10px;
+            padding: 0;
+        }
     }
     .randomness {
         margin-left: 0;
@@ -466,14 +485,16 @@ and (orientation : landscape) {
         }
     }
     .myBox {
-        font-size: 12px;
-        padding-right: 60px;
-        margin-left: 20px;
+        font-size: 20px;
     }
-    .dropdown-menu {
-        li {
-            font-size: 12px;
-            margin-bottom: 6px;
-        }
+    .fa-bars {
+        font-size: 14px;
     }
+    // .dropdown-menu {
+    //     li {
+    //         font-size: 5px;
+    //         margin-top: 0;
+    //         margin-bottom: 2px;
+    //     }
+    // }
 }
