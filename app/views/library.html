@@ -67,9 +67,8 @@
     <a ng-href="#/login"><button class="btn btn-lg btn-default crossfit">Login</button></a>
   </div>
   <div class="col-sm-6" ng-controller="NavCtrl" ng-show="signedIn()">
-    <button class="btn btn-lg btn-default crossfit" ng-click="isCollapsed = !isCollapsed">Enter WOD</button>
-    <hr>
-    <div collapse="isCollapsed">
+    <h2>Enter WOD</h2>
+    <div>
       <form class="newWodForm" role="search" ng-submit="submitPost()">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Workout Title" ng-model="post.title">

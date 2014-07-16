@@ -6,7 +6,6 @@ var app = angular.module('tiyFinalApp', [
     'ngSanitize',
     'ngRoute',
     'firebase',
-    'ui.bootstrap',
     'google-maps',
     'ngGPlaces',
     'underscore'
