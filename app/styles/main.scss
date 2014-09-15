@@ -105,6 +105,14 @@ nav {
     max-height: 370px;
 }
 
+.jumbotron2 {
+    background: url(/images/gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+
 .pageTitle {
     margin: 8% auto;
     min-height: 140px;
@@ -413,6 +421,9 @@ textarea.form-control {
         background: #242224;
         background-attachment: fixed;
         max-height: 180px;
+    }
+    .jumbotron2 {
+        min-height: 180px;
     }
     .pageTitle {
         margin: 14px auto;

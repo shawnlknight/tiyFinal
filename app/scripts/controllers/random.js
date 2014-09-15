@@ -1,5 +1,4 @@
 app.controller('RandomCtrl', function ($scope, $http, _) {
-	$scope.isCollapsed = true;
 	$http.get("data/wods.json").success(function (results) {
 		$scope.wods = results.data;
 		console.log('Array of workouts', results.data);
