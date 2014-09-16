@@ -41440,6 +41440,24 @@ nav {
   }
 }
 
+.jumbotron2 {
+  background: url(/images/gym.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 750px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/shawnleberknight\/Documents\/ironYard\/tiyFinal\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003116;
+  }
+}
+
 .pageTitle {
   margin: 8% auto;
   min-height: 140px;
@@ -41457,7 +41475,7 @@ nav {
   }
 
   line {
-    font-family: \00003117;
+    font-family: \00003125;
   }
 }
 
@@ -41473,7 +41491,7 @@ nav {
   }
 
   line {
-    font-family: \00003122;
+    font-family: \00003130;
   }
 }
 
@@ -41487,7 +41505,22 @@ nav {
   }
 
   line {
-    font-family: \00003127;
+    font-family: \00003135;
+  }
+}
+
+.pageTitle1 {
+  margin: 18%;
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/shawnleberknight\/Documents\/ironYard\/tiyFinal\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003140;
   }
 }
 
@@ -41501,7 +41534,7 @@ nav {
   }
 
   line {
-    font-family: \00003131;
+    font-family: \00003144;
   }
 }
 
@@ -41521,7 +41554,7 @@ nav {
   }
 
   line {
-    font-family: \00003139;
+    font-family: \00003152;
   }
 }
 
@@ -41535,7 +41568,7 @@ nav {
   }
 
   line {
-    font-family: \00003142;
+    font-family: \00003155;
   }
 }
 
@@ -41549,7 +41582,7 @@ nav {
   }
 
   line {
-    font-family: \00003145;
+    font-family: \00003158;
   }
 }
 
@@ -41566,7 +41599,7 @@ nav {
   }
 
   line {
-    font-family: \00003151;
+    font-family: \00003164;
   }
 }
 
@@ -41580,7 +41613,7 @@ nav {
   }
 
   line {
-    font-family: \00003154;
+    font-family: \00003167;
   }
 }
 
@@ -41595,7 +41628,7 @@ nav {
   }
 
   line {
-    font-family: \00003160;
+    font-family: \00003173;
   }
 }
 
@@ -41611,7 +41644,23 @@ nav {
   }
 
   line {
-    font-family: \00003166;
+    font-family: \00003179;
+  }
+}
+
+.titleName1 {
+  color: #12ad04;
+  font-size: 100px;
+  text-shadow: 0 0 20px #333;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/shawnleberknight\/Documents\/ironYard\/tiyFinal\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003185;
   }
 }
 
@@ -41629,7 +41678,7 @@ nav {
   }
 
   line {
-    font-family: \00003172;
+    font-family: \00003191;
   }
 }
 
@@ -41643,7 +41692,21 @@ nav {
   }
 
   line {
-    font-family: \00003177;
+    font-family: \00003196;
+  }
+}
+
+.signIn {
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/shawnleberknight\/Documents\/ironYard\/tiyFinal\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003200;
   }
 }
 
@@ -41657,13 +41720,14 @@ nav {
   }
 
   line {
-    font-family: \00003179;
+    font-family: \00003202;
   }
 }
 
 .col-md-4 a {
   text-decoration: none;
   color: #12ad04;
+  text-shadow: 0 0 0.25px #333;
 }
 
 @media -sass-debug-info {
@@ -41672,7 +41736,7 @@ nav {
   }
 
   line {
-    font-family: \00003183;
+    font-family: \00003207;
   }
 }
 
@@ -41686,7 +41750,7 @@ nav {
   }
 
   line {
-    font-family: \00003187;
+    font-family: \00003211;
   }
 }
 
@@ -41700,7 +41764,7 @@ nav {
   }
 
   line {
-    font-family: \00003190;
+    font-family: \00003214;
   }
 }
 
@@ -41715,7 +41779,7 @@ nav {
   }
 
   line {
-    font-family: \00003196;
+    font-family: \00003220;
   }
 }
 
@@ -41729,7 +41793,7 @@ nav {
   }
 
   line {
-    font-family: \00003200;
+    font-family: \00003224;
   }
 }
 
@@ -41744,7 +41808,7 @@ nav {
   }
 
   line {
-    font-family: \00003205;
+    font-family: \00003229;
   }
 }
 
@@ -41758,7 +41822,7 @@ nav {
   }
 
   line {
-    font-family: \00003209;
+    font-family: \00003233;
   }
 }
 
@@ -41772,7 +41836,7 @@ nav {
   }
 
   line {
-    font-family: \00003213;
+    font-family: \00003237;
   }
 }
 
@@ -41789,7 +41853,7 @@ article {
   }
 
   line {
-    font-family: \00003220;
+    font-family: \00003244;
   }
 }
 
@@ -41804,7 +41868,7 @@ article {
   }
 
   line {
-    font-family: \00003225;
+    font-family: \00003249;
   }
 }
 
@@ -41818,7 +41882,7 @@ article {
   }
 
   line {
-    font-family: \00003229;
+    font-family: \00003253;
   }
 }
 
@@ -41832,7 +41896,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003233;
+    font-family: \00003257;
   }
 }
 
@@ -41848,7 +41912,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003239;
+    font-family: \00003263;
   }
 }
 
@@ -41862,7 +41926,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003243;
+    font-family: \00003267;
   }
 }
 
@@ -41876,7 +41940,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003247;
+    font-family: \00003271;
   }
 }
 
@@ -41891,7 +41955,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003252;
+    font-family: \00003276;
   }
 }
 
@@ -41905,7 +41969,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003256;
+    font-family: \00003280;
   }
 }
 
@@ -41919,7 +41983,22 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003260;
+    font-family: \00003284;
+  }
+}
+
+.lead1 {
+  font-size: 34px;
+  text-shadow: 0 0 20px #333333;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/shawnleberknight\/Documents\/ironYard\/tiyFinal\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003289;
   }
 }
 
@@ -41933,7 +42012,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003262;
+    font-family: \00003291;
   }
 }
 
@@ -41947,7 +42026,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003267;
+    font-family: \00003296;
   }
 }
 
@@ -41961,7 +42040,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003272;
+    font-family: \00003301;
   }
 }
 
@@ -41975,7 +42054,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003275;
+    font-family: \00003304;
   }
 }
 
@@ -41989,7 +42068,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003280;
+    font-family: \00003309;
   }
 }
 
@@ -42003,7 +42082,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003284;
+    font-family: \00003313;
   }
 }
 
@@ -42018,7 +42097,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003287;
+    font-family: \00003316;
   }
 }
 
@@ -42032,7 +42111,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003292;
+    font-family: \00003321;
   }
 }
 
@@ -42046,7 +42125,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003296;
+    font-family: \00003325;
   }
 }
 
@@ -42060,7 +42139,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003300;
+    font-family: \00003329;
   }
 }
 
@@ -42074,7 +42153,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003305;
+    font-family: \00003334;
   }
 }
 
@@ -42090,7 +42169,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003312;
+    font-family: \00003341;
   }
 }
 
@@ -42105,7 +42184,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003317;
+    font-family: \00003346;
   }
 }
 
@@ -42120,7 +42199,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003322;
+    font-family: \00003351;
   }
 }
 
@@ -42136,7 +42215,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003328;
+    font-family: \00003357;
   }
 }
 
@@ -42151,7 +42230,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003333;
+    font-family: \00003362;
   }
 }
 
@@ -42165,7 +42244,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003337;
+    font-family: \00003366;
   }
 }
 
@@ -42181,7 +42260,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003341;
+    font-family: \00003370;
   }
 }
 
@@ -42199,7 +42278,7 @@ textarea.form-control {
   }
 
   line {
-    font-family: \00003350;
+    font-family: \00003379;
   }
 }
 
@@ -42219,7 +42298,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003356;
+      font-family: \00003385;
     }
 }
 
@@ -42235,7 +42314,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003360;
+      font-family: \00003389;
     }
 }
 
@@ -42249,7 +42328,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003363;
+      font-family: \00003392;
     }
 }
 
@@ -42265,7 +42344,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003369;
+      font-family: \00003398;
     }
 }
 
@@ -42280,7 +42359,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003373;
+      font-family: \00003402;
     }
 }
 
@@ -42294,7 +42373,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003376;
+      font-family: \00003405;
     }
 }
 
@@ -42311,7 +42390,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003382;
+      font-family: \00003411;
     }
 }
 
@@ -42325,7 +42404,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003385;
+      font-family: \00003414;
     }
 }
 
@@ -42341,7 +42420,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003391;
+      font-family: \00003420;
     }
 }
 
@@ -42357,7 +42436,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003397;
+      font-family: \00003426;
     }
 }
 
@@ -42373,7 +42452,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003403;
+      font-family: \00003432;
     }
 }
 
@@ -42389,7 +42468,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003409;
+      font-family: \00003438;
     }
 }
 
@@ -42403,7 +42482,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003412;
+      font-family: \00003441;
     }
 }
 
@@ -42419,7 +42498,21 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003417;
+      font-family: \00003446;
+    }
+}
+
+  .jumbotron2 {
+    min-height: 180px;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/shawnleberknight\/Documents\/ironYard\/tiyFinal\/app\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003449;
     }
 }
 
@@ -42437,7 +42530,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003423;
+      font-family: \00003455;
     }
 }
 
@@ -42452,7 +42545,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003428;
+      font-family: \00003460;
     }
 }
 
@@ -42467,7 +42560,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003431;
+      font-family: \00003463;
     }
 }
 
@@ -42481,7 +42574,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003434;
+      font-family: \00003466;
     }
 }
 
@@ -42496,7 +42589,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003438;
+      font-family: \00003470;
     }
 }
 
@@ -42510,7 +42603,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003442;
+      font-family: \00003474;
     }
 }
 
@@ -42524,7 +42617,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003445;
+      font-family: \00003477;
     }
 }
 
@@ -42538,7 +42631,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003448;
+      font-family: \00003480;
     }
 }
 
@@ -42552,7 +42645,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003451;
+      font-family: \00003483;
     }
 }
 
@@ -42567,7 +42660,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003454;
+      font-family: \00003486;
     }
 }
 
@@ -42581,7 +42674,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003459;
+      font-family: \00003491;
     }
 }
 
@@ -42595,7 +42688,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003462;
+      font-family: \00003494;
     }
 }
 
@@ -42609,7 +42702,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003466;
+      font-family: \00003498;
     }
 }
 
@@ -42623,7 +42716,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003468;
+      font-family: \00003500;
     }
 }
 
@@ -42637,7 +42730,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003471;
+      font-family: \00003503;
     }
 }
 
@@ -42653,7 +42746,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003481;
+      font-family: \00003513;
     }
 }
 
@@ -42667,7 +42760,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003483;
+      font-family: \00003515;
     }
 }
 
@@ -42681,7 +42774,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003487;
+      font-family: \00003519;
     }
 }
 
@@ -42695,7 +42788,7 @@ textarea.form-control {
     }
 
     line {
-      font-family: \00003490;
+      font-family: \00003522;
     }
 }
 

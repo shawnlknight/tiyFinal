@@ -110,7 +110,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 700px;
+    min-height: 750px;
 }
 
 .pageTitle {
@@ -130,6 +130,11 @@ nav {
     .btn:hover {
         background-color: $primary-color;
     }
+}
+
+.pageTitle1 {
+    margin: 18%;
+    text-align: center;
 }
 
 .user {
@@ -171,6 +176,12 @@ nav {
     padding-bottom: 10px;
 }
 
+.titleName1 {
+    color: $primary-color;
+    font-size: 100px;
+    text-shadow: 0 0 20px #333;
+}
+
 .marketing {
     background-color: #eaeaea;
     padding-left: 15px;
@@ -182,11 +193,16 @@ nav {
     }
 }
 
+.signIn {
+    text-align: center;
+}
+
 .col-md-4 {
     margin-bottom: 100px;
     a {
         text-decoration: none;
         color: $primary-color;
+        text-shadow: 0 0 0.25px #333;
     }
     a:hover {
             color: #242224;
@@ -263,6 +279,11 @@ textarea.form-control {
 
 .lead {
     color: #d6d6d6;
+}
+
+.lead1 {
+    font-size: 34px;
+    text-shadow: 0 0 20px #333
 }
 
 #wodForm {
